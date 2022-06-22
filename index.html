@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Cadastro de contato</title>
+</head>
+<body>
+<header>
+
+    <img src="/assets/logo-builders.svg" height="40px">
+    <img src="/assets/apix_logo.png" height="40px">
+
+</header>
+
+<main>
+    <h1>Que tal continuarmos esse nosso contato?</h1>
+    <p>Nós da Builders estamos ansiosos para estabelecer essa ponte com você. Insira seus dados abaixo para receber em primeira mão as nossas informações:</p>
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <input type=hidden name="oid" value="00D6g000005jMFp">
+        <input type=hidden name="retURL" value="http://https://platformbuilders.io/">
+        
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+        <!--  comentário dessas lines se quiser testar no modo de depuração.         -->
+        <!--  <input type="hidden" name="debug" value=1>                              -->
+        <!--  <input type="hidden" name="debugEmail"                                  -->
+        <!--  value="juliana.carneiro@platformbuilders.io">                           -->
+        <!--  ----------------------------------------------------------------------  -->
+        <div class="form-line">
+            <span>Primeiro nome</span>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+        </div>
+        <div class="form-line">
+            <span>Sobrenome</span>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>    
+        </div>
+        <div class="form-line">
+            <span>E-mail</span>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" />    
+        </div>
+        <div class="form-line">
+            <span>Empresa</span>
+            <input  id="company" maxlength="40" name="company" size="20" type="text" />    
+        </div>
+        <div class="form-line">
+            <span>Telefone</span>
+            <input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>    
+        </div>
+        <div class="form-line">
+            <span>Cargo</span>
+        
+                <select  id="00N6g00000TPBbF" name="00N6g00000TPBbF" title="Cargo Hierárquico">
+                <option value="">-- Nenhum --</option>
+                <option value="Analista">Analista</option>
+                <option value="Arquiteto de Sistemas">Arquiteto de Sistemas</option>
+                <option value="Business Partner">Business Partner</option>
+                <option value="C-Level">C-Level</option>
+                <option value="Comprador">Comprador</option>
+                <option value="Consultor de TI">Consultor de TI</option>
+                <option value="Coordenador de Sistemas">Coordenador de Sistemas</option>
+                <option value="Coordenador de TI">Coordenador de TI</option>
+                <option value="Diretor de E-commerce">Diretor de E-commerce</option>
+                <option value="Diretor de Inovação">Diretor de Inovação</option>
+                <option value="Diretor de Operações">Diretor de Operações</option>
+                <option value="Diretor de TI">Diretor de TI</option>
+                <option value="Founder">Founder</option>
+                <option value="Gerente de Inovação">Gerente de Inovação</option>
+                <option value="Gerente de Marketing Digital">Gerente de Marketing Digital</option>
+                <option value="Gerente de Produtos">Gerente de Produtos</option>
+                <option value="Gerente de Projetos">Gerente de Projetos</option>
+                <option value="Gerente de TI">Gerente de TI</option>
+                <option value="Head de Digital">Head de Digital</option>
+                <option value="Head de TI">Head de TI</option>
+                <option value="Lider de Projetos">Lider de Projetos</option>
+                <option value="N/A">N/A</option>
+                <option value="Outros cargos">Outros cargos</option>
+                <option value="Outros Diretores">Outros Diretores</option>
+                <option value="Outros Gerentes">Outros Gerentes</option>
+                <option value="Outros_Heads">Outros_Heads</option>
+                <option value="Product Owner">Product Owner</option>
+                </select>       
+        </div>
+
+    </form>
+    <div class="form-line">
+        <label for="00N6g00000UWw0O">Aceito os <a href="#" id="lgpdModalBntOpen">termos de privacidade</a></label><input style="width: 30px; margin-left:0" id="00N6g00000UWw0O" name="00N6g00000UWw0O" type="checkbox" value="1"/> 
+    </div> 
+    <div class="form-line">
+        <input type="submit" name="submit" disabled id="sendBtn">
+    </div> 
+</main>
+
+<div id="success" class="modal" style="display: none;">
+    <div class="modal-content">
+        <img src="/assets/circle-check-solid.svg" alt="" class="check-image">
+        <h2>Cadastrado realizado com sucesso!</h2>
+        <p>Agora você vai receber em primeira mão as nossas novidades direto no seu e-mail.</p>
+        <button id="confirmModalClose">Fechar</button>
+    </div>
+</div>
+
+<div id="lgpdModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Termos de privacidade</h2>
+        <p>Nós, da Builders, gostaríamos de manter seu contato e de sua empresa em nossa base de dados para podermos falarmos, mas, para isso precisamos da sua autorização.
+        <br />
+        Portanto, para sua segurança e em cumprimento à Lei Geral de Proteção de Dados Pessoais - LGPD, a PLATFORM BUILDERS IT SOLUTIONS LTDA (BUILDERS) se obriga a respeitar a privacidade e informa que os dados serão tratados para a finalidade indicada acima e para fins de apoio e promoção das atividades da BUILDERS, sendo que a qualquer momento você poderá solicitar a correção ou exclusão dos dados do nosso banco de dados através do e-mail: <a href="mailto:comercial.team@platformbuilders.io">comercial.team@platformbuilders.io</a>.
+        </p>
+
+        <button id="confirmModalClose">Fechar</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

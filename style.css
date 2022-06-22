@@ -1,0 +1,105 @@
+* {
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body {
+    background-color: #FFD940;
+    
+}
+
+input, select {
+    margin-left: 10px;
+    padding: 8px;
+    width: 200px;
+   }
+
+.form-line {
+    width: 360px;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+span {
+    width: 120px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: left;
+}
+
+main {
+    max-width: 500px;
+    padding: 20px 20px;
+    margin: auto;
+    align-content: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.div-success {
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    width: 300px;
+}
+
+button {
+    background-color: #FFD940;
+    padding: 8px 16px;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+    border-radius: 4px;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal*/
+.modal {
+     /* display: none; Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 300px; /* Could be more or less, depending on screen size */
+  }
+
+  .check-image {
+      max-width: 150px;
+      align-self: center;
+
+  }
