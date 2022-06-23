@@ -56,7 +56,7 @@
         </div>
         <div class="form-line">
             <span>Telefone</span>
-            <input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>    
+            <input  id="phone" maxlength="40" name="phone" size="20" type="number" /><br>    
         </div>
         <div class="form-line">
             <span>Cargo</span>
@@ -95,10 +95,10 @@
 
     </form>
     <div class="form-line">
-        <label for="00N6g00000UWw0O">Aceito os <a href="#" id="lgpdModalBntOpen">termos de privacidade</a></label><input style="width: 30px; margin-left:0" id="00N6g00000UWw0O" name="00N6g00000UWw0O" type="checkbox" value="1"/> 
+        <label for="00N6g00000UWw0O">Aceito os <a href="#" id="lgpdModalBntOpen"">termos de privacidade</a></label><input style="width: 30px; margin-left:0" id="00N6g00000UWw0O"  onselect="enableSendForm()" name="00N6g00000UWw0O" type="checkbox" value="1"/> 
     </div> 
     <div class="form-line">
-        <input type="submit" name="submit" disabled id="sendBtn">
+        <input type="submit" name="submit" class="button" disabled id="sendBtn">
     </div> 
 </main>
 
@@ -119,7 +119,7 @@
         Portanto, para sua segurança e em cumprimento à Lei Geral de Proteção de Dados Pessoais - LGPD, a PLATFORM BUILDERS IT SOLUTIONS LTDA (BUILDERS) se obriga a respeitar a privacidade e informa que os dados serão tratados para a finalidade indicada acima e para fins de apoio e promoção das atividades da BUILDERS, sendo que a qualquer momento você poderá solicitar a correção ou exclusão dos dados do nosso banco de dados através do e-mail: <a href="mailto:comercial.team@platformbuilders.io">comercial.team@platformbuilders.io</a>.
         </p>
 
-        <button id="confirmModalClose">Fechar</button>
+        <button id="lgpdModalClose" class="button">Fechar</button>
     </div>
 </div>
 

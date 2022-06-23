@@ -1,4 +1,33 @@
-    // Get the modal
+// Block and enable send button when check box is selected
+
+let sendBtn = document.getElementById("sendBtn");
+let checkbox = document.getElementById("00N6g00000UWw0O");
+
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    sendBtn.disabled = false;
+  } else {
+    sendBtn.disabled = true;
+  }
+});
+
+// Show LGPD modal
+
+  let aLgpd = document.getElementById("lgpdModalBntOpen");
+  let lgpdModal = document.getElementById("lgpdModal");
+  let lgpdModalBtn = document.getElementById("lgpdModalClose");
+
+  lgpdModalBntOpen.addEventListener('click', event => {
+    lgpdModal.style.display = "block";
+  });
+  
+  lgpdModalBtn.addEventListener('click', event => {
+    lgpdModal.style.display = "none";
+  });
+  
+
+
+/* Get the modal
     var confirmationModal = document.getElementById("confirmationModal");
     var lgpdModal = document.getElementById("lgpdModal")
     
@@ -7,11 +36,11 @@
     var lgpdModalBtn = document.getElementById("lgpdModalBtnOpen")
     
     // Get the <span> element that closes the modal
-    var span = document.getElementsById("confirmModalClose")[0];
+    var confirmModalClose = document.getElementsById("confirmModalClose");
     
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
-      modal.style.display = "block";
+      confirmModalClose.style.display = "none";
     }
     
     // When the user clicks on <span> (x), close the modal
@@ -24,4 +53,4 @@
       if (event.target == modal) {
         modal.style.display = "none";
       }
-    }
+    } */

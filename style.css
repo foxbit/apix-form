@@ -41,6 +41,19 @@ input, select {
     margin: auto;
 }
 
+@media screen and (max-width: 700px) {
+
+    .form-line {
+    display: flex;
+    flex-direction: column;
+    }
+
+    span {
+        padding: 0 0 10px 10px;
+    }
+    
+    }
+
 span {
     width: 120px;
     display: inline-block;
@@ -68,13 +81,15 @@ form {
     width: 300px;
 }
 
-button {
-    background-color: #FFD940;
+
+.button {
+    background-color:rgb(228, 228, 228);
     padding: 8px 16px;
     cursor: pointer;
     width: 150px;
     align-self: center;
     border-radius: 4px;
+
 }
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal*/
@@ -93,6 +108,7 @@ button {
   
   /* Modal Content/Box */
   .modal-content {
+    
     display: flex;
     flex-direction: column;
     border-radius: 4px;
