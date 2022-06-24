@@ -9,6 +9,7 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+
 header {
     background-color: white;
     padding: 25px;
@@ -28,24 +29,23 @@ p {
     padding: 10px 0 10px 0;
 }
 
-input, select {
-    margin-left: 10px;
-    padding: 8px;
-    width: 200px;
+input, select, textarea {
+
    }
 
 .form-line {
-    /*width: 360px;
-    
-    width: fit-content;*/
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     padding-bottom: 30px;
-    margin: auto;
+    
 }
 
 @media screen and (max-width: 700px) {
 
     .form-line {
     display: flex;
+    align-items: center;
     flex-direction: column;
     }
 
@@ -56,10 +56,11 @@ input, select {
     }
 
 span {
-    width: 100%;
-    display: inline-block;
+    width: 200px;
+    display:inline-block;
     font-weight: bold;
     text-align: left;
+    background-color: aqua;
 }
 
 main {
@@ -136,7 +137,4 @@ form {
     width: 100px;
   }
 
-  h2 {
-    margin: auto;
-  }
   
