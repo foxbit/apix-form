@@ -35,9 +35,10 @@ input, select {
    }
 
 .form-line {
-    width: 360px;
-    padding-bottom: 10px;
-    width: fit-content;
+    /*width: 360px;
+    
+    width: fit-content;*/
+    padding-bottom: 30px;
     margin: auto;
 }
 
@@ -55,7 +56,7 @@ input, select {
     }
 
 span {
-    width: 120px;
+    width: 100%;
     display: inline-block;
     font-weight: bold;
     text-align: left;
@@ -124,3 +125,18 @@ form {
       align-self: center;
 
   }
+
+  .div-images {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  h2 {
+    margin: auto;
+  }
+  
