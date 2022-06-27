@@ -1,12 +1,20 @@
 * {
     border: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
     margin: 0;
+    line-height: 1.6;
 }
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    font-size: x-large;
+    color: #E9EDEF;
+}
+
+p, ul {
+    color: #E9EDEF;
 }
 
 a {
@@ -26,7 +34,7 @@ header {
 }
 
 body {
-    background-color: #FFD940;
+    background-color: #1B2125;
     
 }
 
@@ -68,9 +76,9 @@ main {
 
 form {
     margin-bottom: 20px;
-    background-color: rgb(57, 52, 13);
+    background-color: #3A4852;
     padding: 24px;
-    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .div-success {
@@ -84,11 +92,10 @@ form {
 
 
 .button {
-    background-color:rgb(228, 228, 228);
+    background-color: #FFD940;
     padding: 8px 16px;
     cursor: pointer;
-    width: 80%;
-    border-radius: 4px;
+    width: 40%;
     align-self: center;
 }
 
@@ -116,8 +123,7 @@ form {
     
     display: flex;
     flex-direction: column;
-    border-radius: 4px;
-    background-color: #fefefe;
+    background-color: #3A4852;
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
