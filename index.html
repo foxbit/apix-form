@@ -59,25 +59,32 @@
         <!--  <input type="hidden" name="debugEmail"                                  -->
         <!--  value="juliana.carneiro@platformbuilders.io">                           -->
         <!--  ----------------------------------------------------------------------  -->
+        
+            <em>Aproveite ao vivo as experiências que preparamos para você aqui no estande da Builders!
+                Queremos te conhecer, então deixe seus dados abaixo para podermos te ajudar a otimizar seus resultados e compartilhar cases e informações úteis sobre inovação.
+                Obs: Nem todos os campos são obrigatórios, apenas seus dados de identificação.</em> 
+                <br /><br />
+        
+        
         <div class="form-line">
-            <span>Primeiro nome</span>
-            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" class="input-form"/><br>
+            <span>Primeiro nome *</span>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" class="input-form" required/><br>
         </div>
         <div class="form-line">
-            <span>Sobrenome</span>
-            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" class="input-form"/><br>    
+            <span>Sobrenome *</span>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" class="input-form" required/><br>    
         </div>
         <div class="form-line">
-            <span>E-mail</span>
-            <input  id="email" maxlength="80" name="email" size="20" type="text" class="input-form"/>    
+            <span>E-mail *</span>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" class="input-form" required/>    
         </div>
         <div class="form-line">
             <span>Empresa</span>
-            <input  id="company" maxlength="40" name="company" size="20" type="text" class="input-form"/>    
+            <input  id="company" maxlength="80" name="company" size="20" type="text" class="input-form"/>    
         </div>
         <div class="form-line">
-            <span>Telefone</span>
-            <input  id="phone" maxlength="40" name="phone" size="20" type="tel" class="input-form"/><br>    
+            <span>Telefone *</span>
+            <input  id="phone" maxlength="40" name="phone" size="20" type="tel" class="input-form" required/><br>    
         </div>
         <div class="form-line">
             <span>Cargo</span>
@@ -150,12 +157,12 @@
                 </select><br>
         </div>
         <div class="form-line nowrap">
-            <span style="width: 90%;">Gostaria de receber um nosso contato para falar sobre Transformação Digital, Novas Ventures e conhecer nossos Cases?</span>
+            <span style="width: 90%;">Gostaria de receber nosso contato para falarmos sobre Transformação Digital, novas Ventures e conhecer nossos cases?</span>
             <input  id="00NHY000000O3wP" name="00NHY000000O3wP" type="checkbox" value="1" style="margin-left: 15px;" /><br> 
         </div> 
     
     <div class="form-line nowrap">
-        <span>Aceito os <a href="#" id="lgpdModalBntOpen">termos de privacidade</a></span><input id="00N6g00000UWw0O"  onselect="enableSendForm()" name="00N6g00000UWw0O" type="checkbox" value="1" style="margin-left: 15px;" /> 
+        <span>Aceito os <a href="#" id="lgpdModalBntOpen">termos de privacidade</a></span><input id="00N6g00000UWw0O"  onselect="enableSendForm()" name="00N6g00000UWw0O" type="checkbox" value="1" style="margin-left: 15px;" required/> 
     </div> 
     <div  class="form-line" >
         <input type="submit" name="submit" class="button" disabled id="sendBtn">
