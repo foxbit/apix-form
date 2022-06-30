@@ -101,8 +101,8 @@ form {
     background-color: #FFD940;
     padding: 8px 16px;
     cursor: pointer;
-    width: 40%;
     align-self: center;
+    font-weight: bold;
 }
 
 .button:disabled {
@@ -133,6 +133,7 @@ form {
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
+    align-items: center;
     max-width: 300px; /* Could be more or less, depending on screen size */
   }
 
